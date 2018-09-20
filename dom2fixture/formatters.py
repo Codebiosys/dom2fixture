@@ -1,5 +1,3 @@
-import uuid
-
 from .xpath import get_shortest_xpath
 from .utils import get_element_title
 
@@ -104,4 +102,3 @@ def format_image(element, config, extractor, tree):
             'selector': get_shortest_xpath(tree, e),
             'by': 'xpath',
         }
-

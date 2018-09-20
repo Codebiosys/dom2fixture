@@ -32,7 +32,6 @@ def get_element_title(element, suffix=None, no_default=False):
         if possible_title:
             return f'{possible_title} {suffix}'
 
-
     # Nothing was found
     if no_default:
         return None
