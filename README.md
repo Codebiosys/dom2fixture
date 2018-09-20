@@ -1,5 +1,7 @@
 # Dom2Fixture
 
+[![Build Status](https://travis-ci.com/Codebiosys/dom2fixture.svg?token=sqxCEuNQWHfr2F3qwRmC&branch=master)](https://travis-ci.com/Codebiosys/dom2fixture)
+
 A simple utility to validate and transform VeriPy output files into the Specio format.
 
 **UNDER DEVELOPMENT**
