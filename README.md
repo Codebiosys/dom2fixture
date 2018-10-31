@@ -2,11 +2,7 @@
 
 [![Build Status](https://travis-ci.com/Codebiosys/dom2fixture.svg?token=sqxCEuNQWHfr2F3qwRmC&branch=master)](https://travis-ci.com/Codebiosys/dom2fixture)
 
-A simple utility to validate and transform VeriPy output files into the Specio format.
-
-**UNDER DEVELOPMENT**
-
-Dom2Fixture is a python module that extracts the important information about a page and outputs it to a VeriPy fixture file. This allows the user to quickly build VeriPy fixtures without having to manually select and copy elements.
+Dom2Fixture is a python module that extracts the important information about a page and outputs it to a fixture file. This allows the user to quickly build page fixtures without having to manually select and copy elements.
 
 At any time, run the following command to get help.
 
@@ -20,13 +16,10 @@ python -m dom2fixture --help
 Currently Dom2Fixture is not installed anywhere by default. To use Dom2Fixture locally, simply ensure that you have a valid virtual environment for Python 3.6 or later, and install the requirements with the following command.
 
 ```bash
-git clone git@github.com/Codebiosis/specio_app.git
-
-# Production
-pip install ./specio_app/glue/dom2fixture
+git clone https://github.com/Codebiosys/dom2fixture.git
 
 # Development (allows changes to the python files)
-pip install -e ./specio_app/glue/dom2fixture
+cd dom2fixture && pip install
 ```
 
 
@@ -75,7 +68,7 @@ extractors = (
 
 ## Viewing the Results on the Command Line
 
-You can easily view the results of the conversion in the terminal by using[jq](https://stedolan.github.io/jq/). Using the command from before, with JQ it becomes:
+You can easily view the results of the conversion in the terminal by using [jq](https://stedolan.github.io/jq/). Using the command from before, with JQ it becomes:
 
 ```bash
 pbpaste | python -m dom2fixture | jq
