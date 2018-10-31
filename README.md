@@ -19,7 +19,7 @@ Currently Dom2Fixture is not installed anywhere by default. To use Dom2Fixture l
 git clone https://github.com/Codebiosys/dom2fixture.git
 
 # Development (allows changes to the python files)
-cd dom2fixture && pip install
+cd dom2fixture && pip install -r requirements.txt && pip install -e .
 ```
 
 
